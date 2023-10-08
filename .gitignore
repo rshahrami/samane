@@ -1,0 +1,4 @@
+config/media
+config/static
+config/db.sqlite3
+.siteENV

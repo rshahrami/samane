@@ -1,0 +1,3 @@
+config/db.sqlite3
+config/media
+config/static

@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+
+  nginx:
+    hostname: nginx
+    image: nginx:1.23.1
+    restart: always
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./volume/nginx/conf/nginx.conf:/etc/nginx/nginx.conf
+      - ./volume/nginx/conf/conf.d/:/etc/nginx/conf.d/
+      - ./volume/nginx/log/:/var/log/nginx/
+      - ./volume/app/static/:/app/static/
+      - ./volume/app/media/:/app/media/
+
+
+  samane:
+    hostname: samane
+    image: samane:v1.0.0
+    restart: always
+    ports:
+      - 8000:8000
+    volumes:
+      - ./volume/app/static/:/app/static/
+      - ./volume/app/media/:/app/media/
