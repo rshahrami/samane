@@ -13,7 +13,7 @@ chmod 755 runserver_local.sh
 
 run below command for docker compose 
 ```
-docker compose -f docker-compose-local.yaml up -d
+docker compose -f docker-compose-local.yaml up
 ```
 
 ### server
