@@ -1,4 +1,17 @@
+# Django
 config/media
 config/static
 config/db.sqlite3
+*.log
+*.pot
+*.pyc
+__pycache__/
+**/migrations/*
+!**/migrations/__init__.py
+
+# env
 .siteENV
+
+# local file
+.vscode
+*.tar
